@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SocketIoTestTool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+</head>
+
+<body>
+    <div class="panal">
+        <div class="top">
+            <div class="left">
+                <h1 class="g-title">1、连接/connection</h1>
+                <input class="g-input host" name="host" placeholder="http://192.168.1.250:8877" type="text"  />
+                <input class="g-button connectionBtn" type="button" value="连接" />
+
+                <h1 class="g-title l-three">3、推送/Emit</h1>
+                <input class="g-input emit-key" name="host" type="text" placeholder="key" />
+                <div class="input-row">
+                    <textarea class="g-textarea emit-value" rows="5" placeholder="value"></textarea>
+                </div>
+                <input class="g-button emit" type="button" value="Emit" />
+            </div>
+            <div class="right">
+                <h1 class="g-title">2、监听/on</h1>
+                <textarea class="g-textarea saveValue" rows="5" placeholder="key(多个请用逗号隔开)"></textarea>
+                <div class="input-row"><input class="g-button saveOn" type="button" value="save" />
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h1 class="g-title">4、状态/Log
+                <div class="bottom-tool"><input class="g-button scrollPower" type="button" value="取消滚屏" />&nbsp;<input class="g-button clear-class clear"
+                        type="button" value="清屏" /></div>
+            </h1>
+            <div class="log"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../app/jquery-1.8.3.js?20160403"></script>
+<script src="../app/layer/layer.js" type="application/javascript"></script>
+<script src="../app/global.js" type="application/javascript"></script>
+<script src="../app/socket.io.min.js" type="application/javascript"></script>
+<script src="../app/main.js" type="application/javascript"></script>

@@ -1,0 +1,12 @@
+{
+  "name": "SocketIoTestTool",
+  "main": "views/main.html",
+  "version": "1.0.0",
+  "window": {
+    "icon": "assets/icon.png",
+    "width":600,
+    "height":420,
+    "resizable":false,
+    "show":false
+  }
+}
